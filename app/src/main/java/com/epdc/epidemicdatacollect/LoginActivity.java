@@ -139,6 +139,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 login();
                 break;
             case R.id.btnLinkToRegisterScreen:
+                //Starting the RegisterActivity
                 Intent intent = new Intent (this,RegisterActivity.class);
                 startActivity(intent);
                 break;

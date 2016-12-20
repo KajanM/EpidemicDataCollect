@@ -6,7 +6,7 @@ package com.epdc.epidemicdatacollect;
 
 public class Config {
     //URL to our login.php file
-    public static final String LOGIN_URL = "http://10.14.137.168/Android/LoginLogout/login.php";
+    public static final String LOGIN_URL = "http://192.168.8.101/Android/LoginLogout/login.php";
 
     //Keys for email and password as defined in our $_POST['key'] in login.php
     public static final String KEY_EMAIL = "email";
