@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText editTextEmail;
     private EditText editTextPassword;
     private AppCompatButton buttonLogin;
+    private AppCompatButton buttonRegister;
 
     //boolean variable to check user is logged in or not
     //initially it is false
@@ -43,9 +45,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
 
         buttonLogin = (AppCompatButton) findViewById(R.id.buttonLogin);
+        buttonRegister = (AppCompatButton)findViewById(R.id.btnLinkToRegisterScreen);
 
         //Adding click listener
         buttonLogin.setOnClickListener(this);
+
+        buttonRegister.setOnClickListener(this);
+
+
     }
 
     @Override
@@ -125,7 +132,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        //Calling the login function
-        login();
+
+        switch (v.getId()){
+            case R.id.buttonLogin:
+                //Calling the login function
+                login();
+                break;
+            case R.id.btnLinkToRegisterScreen:
+                Intent intent = new Intent (this,RegisterActivity.class);
+                startActivity(intent);
+                break;
+        }
+
     }
+
+
+
 }
