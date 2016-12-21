@@ -15,7 +15,7 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextName" />
+        android:id="@+id/editTextDocName" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextUserName" />
+        android:id="@+id/editTextDocUserName" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:id="@+id/editTextPassword" />
+        android:id="@+id/editTextDocPassword" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,12 +47,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:id="@+id/editTextEmail" />
+        android:id="@+id/editTextDocEmail" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_register"
-        android:id="@+id/buttonRegister" />
+        android:id="@+id/buttonDocRegister" />
 
 </LinearLayout>
