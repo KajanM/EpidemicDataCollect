@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText editTextPassword;
     private AppCompatButton buttonLogin;
     private AppCompatButton buttonRegister;
+    private AppCompatButton buttonDocRegister;
 
     //boolean variable to check user is logged in or not
     //initially it is false
@@ -46,11 +47,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         buttonLogin = (AppCompatButton) findViewById(R.id.buttonLogin);
         buttonRegister = (AppCompatButton)findViewById(R.id.btnLinkToRegisterScreen);
+        buttonDocRegister = (AppCompatButton)findViewById(R.id.btnLink2ToRegisterScreen);
 
         //Adding click listener
         buttonLogin.setOnClickListener(this);
 
         buttonRegister.setOnClickListener(this);
+        buttonDocRegister.setOnClickListener(this);
 
 
     }
@@ -142,6 +145,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 //Starting the RegisterActivity
                 Intent intent = new Intent (this,RegisterActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.btnLink2ToRegisterScreen:
+                //Starting the RegisterDocActivity
+                Intent intent1 = new Intent(this, RegisterDocActivity.class );
+                startActivity(intent1);
                 break;
         }
 
